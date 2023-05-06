@@ -1,0 +1,767 @@
+html{
+     scroll-behavior: smooth !important;
+}
+body{
+     min-width: 992px !important;
+}
+.body-container{
+     width: 100% !important;
+}
+
+.pop-up{
+     box-shadow: 0 0 20px #00000033;
+     background-color: #fff;
+     border-radius: 20px;
+     position: fixed;
+     z-index: 1000;
+     padding: 30px;
+     height: 50%;
+     width: 30%;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     transition: all 1s ease-in-out !important;
+}
+.pop-up .row-1{
+     height: 10%;
+}
+.pop-up .row-2{
+     height: 90%;
+     padding: 0 20px;
+     flex-wrap: wrap;
+}
+.pop-up .row-2 .input{
+     font-family: Rokh-Regular;
+     border: 1px solid var(--blue);
+     outline: 0;
+     border-radius: 10px;
+     padding: 15px 20px 15px 0;
+     margin: 10px 0;
+     font-family: Rokh-Semibold;
+}
+.pop-up .row-2 .input:nth-child(2){
+     width: 40%;
+}
+.pop-up .row-2 .input:nth-child(3){
+     width: 45%;
+}
+
+.pop-up .row-2 .input::placeholder{
+     color: #000;
+}
+.pop-up .row-2 .action-btn{
+     padding: 15px 0;
+     background-color: var(--Green);
+     border: none;
+     border-radius: 10px;
+     color: #fff;
+     font-family: Rokh-Extrabold;
+}
+.inActive{
+     transition: all 1s ease-in-out !important;
+     top: -100% !important;
+     left: 40% !important;
+}
+/* navbar */
+/* #region */
+nav.navbar{
+     justify-content: flex-start;
+     display: flex;
+     font-family: Pinar;
+     margin-top: 20px;
+     height: 16vh;
+}
+nav.navbar ul{
+     margin-right: 20%;
+     justify-content: space-between;
+     font-size: 18px;
+     width: 42%;
+}
+
+.cta{
+     background-color: var(--Yellow);
+     font-family: Rokh-Ultrabold;
+     text-decoration: none;
+     padding: 10px 15px;
+     border-radius: 7px;
+     outline: none;
+     color: #fff;
+     border: none;
+}
+/* #endregion */
+
+/* header */
+/* #region */
+header.header{
+     height: 84vh;
+     margin-bottom: 30px;
+}
+header.header .container .hero-img{
+     width: 40%;
+     justify-content: flex-end;
+}
+header.header .container .hero-content{
+     width: 60%;
+}
+header.header .container .hero-content h1{
+     font-family: Rokh-Black;
+     font-size: 50px;
+     text-align: center;
+     color: #1E1E1E;
+}
+header.header .container .hero-content h1 span:nth-child(1){
+     color: var(--Yellow);
+}
+header.header .container .hero-content h1 span:nth-child(4){
+     color: var(--blue);
+}
+header.header .container .hero-content h1 span:nth-child(3){
+     color: var(--Green);
+}
+header.header .container .hero-content p{
+     font-family: Pinar;
+     color: #555555;
+     margin: 0 0 40px 0;
+}
+header.header .container .hero-content div{
+     width: 40%;
+}
+header.header .container .hero-content div button{
+     padding: 10px 20px;
+     border: none;
+     outline: none;
+     background-color: var(--blue);
+     color: #fff;
+     font-family: Rokh-Ultrabold;
+     border-radius: 7px;
+}
+/* #endregion */
+
+/* Course */
+/* #region */
+
+section.course{
+     height: 130vh;
+     margin-bottom: 30px;
+}
+section.course .container .title{
+     height: 10%;
+}
+section.course .container .title h2{
+     font-family: Rokh-Extrabold;
+     color: var(--Yellow);
+     font-size: xx-large;
+}
+section.course .container .title p{
+     font-family: Pinar;
+     color: #555555;
+}
+section.course .container .content{
+     height: 90%;
+}
+section.course .container .content .course-benefits{
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     width: 50%;
+     background: url(../assets/Group\ 127.jpg) no-repeat;
+     background-position: 0 150px;
+     background-size: contain;
+}
+section.course .container .content .course-benefits .card{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     width: 240px;
+     height: 290px;
+     border-radius: 80px;
+     padding: 20px 41px;
+     border-radius: 50px;
+     background-color: #fff;
+     box-shadow: 0px 0px 30px 0px #0000001A;
+}
+section.course .container .content .course-benefits .card:nth-child(even){
+     margin-top: 50px;
+}
+section.course .container .content .course-benefits .card img{
+     width: 60%;
+}
+section.course .container .content .course-benefits .card h2{
+     font-family: Rokh-Ultrabold;
+     text-align: center;
+     font-size: 20px;
+}
+section.course .container .content .course-benefits .card p{
+     font-size: 10px;
+     text-align: center;
+     font-family: Pinar;
+     color: #757575;
+}
+section.course .container .content video{
+     width: 50%;
+     border-radius: 20px;
+     box-shadow: 10px 20px 50px 0px #00000026;
+}
+
+/* #endregion */
+
+/* Why us */
+/* #region */
+
+section.why-us{
+     height: 100vh;
+     margin-bottom: 30px;
+}
+section.why-us .container .title{
+     height: 10%;
+}
+section.why-us .container .title h2{
+     font-family: Rokh-Extrabold;
+     font-size: 40px;
+}
+section.why-us .container .title p{
+     font-family: Pinar;
+     color: #757575;
+     font-size: 20px;
+}
+section.why-us .container .content{
+     height: 90%;
+     justify-content: flex-start;
+}
+section.why-us .container .content .row-1{
+     width: 40%;
+     border-radius: 20px;
+     box-shadow: 0 0 20px 0px #00000014;
+}
+section.why-us .container .content .row-2{
+     width: 50%;
+     justify-content: center;
+     margin-right: 20px;
+}
+section.why-us .container .content .row-2 ul{
+     width: 100%;
+     height: auto;
+     margin-bottom: 10px;
+}
+section.why-us .container .content .row-2 ul li{
+     margin: 5px 0;
+}
+section.why-us .container .content .row-2 ul li span{
+     width: 120px;
+     display: flex;
+     padding: 10px;
+     height: 50px;
+     border-radius: 50px;
+}
+section.why-us .nu-1 , section.why-us .nu-3{
+     background: linear-gradient(270deg, #2FD686 0%, rgba(47, 214, 134, 0) 100%);
+}
+section.why-us .nu-2 , section.why-us .nu-4{
+     background: linear-gradient(270deg, #2F73EE 0%, rgba(47, 115, 238, 0) 100%);
+}
+section.why-us .container .content .row-2 ul li p{
+     font-family: Pinar;
+     font-size: x-large;
+     margin-right: -60px;
+}
+section.why-us .container .content .row-2 .box{
+     font-family: Rokh-Semibold;
+     height: 90px;
+     font-size: x-large;
+     width: 400px;
+     border-radius: 30px;
+     color: #fff;
+     background-color: var(--Green);
+     transform: translate(50px, 5px);
+
+}
+section.why-us .container .content .row-3{
+     transform: translateY(-150px);
+     height: 80%;
+}
+/* #endregion */
+
+/* Tutor */
+/* #region */
+section.tutor{
+     height: 100vh;
+     margin-bottom: 30px;
+}
+section.tutor .content{
+     width: 50%;
+}
+section.tutor .content .teacher .heading{
+     font-family: Rokh-Semibold;
+     font-size: 40px;
+     margin-bottom: -40px;
+}
+section.tutor .content .teacher div{
+     width: 60px;
+     height: 130px;
+     border-radius: 50px;
+     background: linear-gradient(180deg, #2FD686 0%, rgba(47, 214, 134, 0) 100%);
+}
+section.tutor .content .teacher .teacher{
+     font-family: Rokh-Extrabold;
+     font-size: 40px;
+     margin-top: -40px;
+}
+section.tutor .content .statistics li{
+     margin: 5px;
+}
+section.tutor .content .statistics li p{
+     margin-right: -75px;
+     font-family: Rokh-Regular;
+     font-size: 22px;
+}
+section.tutor .content .statistics li span{
+     width: 120px;
+     display: flex;
+     padding: 10px;
+     height: 45px;
+     border-radius: 50px;
+}
+section.tutor .nu-1 , section.tutor .nu-4{
+     background: linear-gradient(270deg, #FFB820 0%, rgba(255, 184, 32, 0) 100%);
+}
+section.tutor .nu-2 , section.tutor .nu-3{
+     background: linear-gradient(270deg, #2F73EE 0%, rgba(47, 115, 238, 0) 100%);
+}
+section.tutor .content p{
+     font-family: Pinar;
+     font-size: 25px;
+     text-align: justify;
+     color: #444444;
+}
+/* #endregion */
+
+/* course content */
+/* #region */
+section.course-content{
+     height: auto;
+     margin-bottom: 20px;
+}
+section.course-content .col{
+     width: 50%;
+}
+section.course-content .col img{
+     width: 100%;
+}
+section.course-content .col2 img:first-child{
+     width: 70%;
+     margin-right: 150px;
+     margin-bottom: 100px;
+}
+/* #endregion */
+
+/* footer */
+/* #region */
+footer{
+     height: 70vh;
+     background: url(../assets/footerbackground.svg) no-repeat;
+     background-size: cover;;
+}
+footer .col-1{
+     height: 85%;
+     align-items: end;
+}
+footer .col-2{
+     height: 15%;
+     margin-top: 40px;
+     font-family: Pinar;
+     align-items: center;
+}
+footer .col-1 .row-1{
+     height: 65%;
+     width: fit-content;
+     justify-content: flex-start;
+}
+footer .col-1 .row-1 img{
+     width: 150px;
+}
+footer .col-1 .row-1 p{
+     font-family: Pinar;
+     width: 300px;
+     text-align: justify;
+}
+footer .col-1 .datas{
+     width: fit-content;
+     height: fit-content;
+     font-family: Pinar;
+}
+footer .col-1 .socials{
+     height: fit-content;
+     width: fit-content;
+     font-family: Pinar;
+}
+footer .col-1 .socials img{
+     width: 40px;
+     margin: 5px;
+}
+/* #endregion */
+
+@media all and (max-width: 600px){
+
+     .container{width: 100%; padding: 0 25px !important;}
+     html, body{
+          direction: rtl;
+          min-width: 600px !important;
+     }
+     .body-container{
+          padding-top: 10px;
+          width: 100% !important;
+     }
+     nav.navbar{
+          width: 100%;
+          height: 15vh;
+     }
+     nav.navbar ul{
+          margin: 0;
+          width: 80%;
+     }
+
+     header.header{
+          width: 100%;
+          height: 120vh;
+     }
+     header.header .container{
+          flex-direction: column;
+     }
+     header.header .container .hero-content{
+          width: 100%;
+          height: 50%;
+     }
+     header.header .container .hero-content h1{
+          font-size: 53px;
+     }
+     header.header .container .hero-content p{
+          font-size: 30px;
+          text-align: center;
+     }
+     header.header .container .hero-img{
+          width: 100%;
+          height: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+     }
+     header.header .container .hero-img img{
+          width: 100%;
+     }
+     section.course{
+          width: 100%;
+          height: 130vh;
+     }
+     section.course .container{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 100%;
+          height: 100%;
+     }
+     section.course .container .title{
+          width: 100%;
+          height: 7%;
+     }
+     section.course .container .content{
+          display: flex;
+          flex-direction: column-reverse !important;
+          width: 100%;
+          height: 90%;
+     }
+     section.course .container .content .course-benefits{
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+     }
+     section.course .container .content video{
+          width: 100%;
+          height: auto;
+          margin-bottom: 20px;
+     }
+     section.course .container .content .course-benefits .card{
+          width: 220px;
+          height: 270px;
+     }
+     section.why-us{
+          width: 100%;
+          height: 170vh;
+     }
+     section.why-us .container{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column !important;
+          justify-content: space-between;
+          align-items: center;
+     }
+     section.why-us .container .title{
+          width: 100%;
+          height: 10%;
+          text-align: center;
+     }
+     section.why-us .container .content{
+          width: 100%;
+          height: 90%;
+          display: flex;
+          flex-direction: column;
+     }
+     section.why-us .container .content .row-1{
+          width: 100%;
+          height: auto;
+     }
+     section.why-us .container .content .row-2{
+          width: 100%;
+          height: 50%;
+          display: flex;
+          flex-direction: column !important;
+          justify-content: space-evenly;
+          align-items: center;
+          margin-top: 10px;
+     }
+     section.why-us .container .content .row-2 ul{
+          width: fit-content;
+          height: 80%;
+     }
+     section.why-us .container .content .row-2 .box{
+          transform: translate(0);
+          height: 20%;
+     }
+     section.why-us .container .content .row-3{
+          width: 60%;
+          height: auto;
+          transform: translate(0);
+     }
+     section.tutor{
+          width: 100%;
+          height: 150vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+     }
+
+     section.tutor img{
+          height: 50% !important;
+     }
+     section.tutor .content{
+          width: 100%;
+          height: 50%;
+     }
+     section.tutor .content .statistics li span img{
+          height: 100% !important;
+     }
+     section.course-content{
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+     }
+     section.course-content .col{
+          width: 100%;
+          height: auto;
+     }
+     footer{
+          flex-direction: column;
+          width: 100% !important;
+          height: 130vh;
+          background-position: -100px 0;
+          background-size: cover;
+     }
+     footer .col-1{
+          margin-top: auto;
+          flex-direction: column;
+          width: 100%;
+          height: 45%;
+          justify-content: center;
+          align-items: center;
+     }
+     footer .col-1 .row-1{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: fit-content;
+     }
+     footer .col-1 .row-1 p{
+          width: 100%;
+          text-align: center;
+     }
+     footer .col-1 .datas{
+          justify-content: center;
+          align-items: stretch;
+          width: fit-content;
+     }
+     footer .col-2{
+          margin-top: 0;
+          width: 100%;
+          height: 10%;
+     }
+}
+@media all and (min-width: 600px) and (max-width: 900px) {
+     .container{width: 100%; padding: 0 30px !important;}
+     html, body{
+          display: flex;
+          direction: rtl;
+          min-width: 900px !important;
+          overflow-x: hidden;
+     }
+     .body-container{
+          display: flex;
+          flex-direction: column;
+          align-items: center !important;
+          padding-top: 10px;
+          width: 100% !important;
+     }
+     nav.navbar{
+          width: 100%;
+     }
+     nav.navbar ul{
+          width: 60%;
+     }
+     header.header{
+          width: 100px;
+          height: 95vh;
+     }
+     header.header .container{
+          width: 100%;
+     }
+     header.header .container .hero-img{
+          width: 40%;
+     }
+     header.header .container .hero-img img{
+          height: 76% !important;
+     }
+     header.header .container .hero-content{
+          width: 60%;
+          height: 100%;
+          text-align: center;
+     }
+     header.header .container .hero-content h1{
+          font-size: 45px;
+     }
+
+     section.course{
+          width: 100%;
+          height: 150vh;
+     }
+     section.course .container .title{
+          width: 100%;
+          height: 10%;
+     }
+     section.course .container .content{
+          height: 90%;
+     }
+     section.course .container .content video{
+          width: 45%;
+     }
+     section.course .container .content .course-benefits{
+          width: 55%;
+          height: 100%;
+     }
+     section.course .container .content .course-benefits .card{
+          padding: 15px 20px;
+          width: 200px;
+          height: 250px;
+     }
+     section.course .container .content .course-benefits .card img{
+          width: 50%;
+     }
+     section.course .container .content .course-benefits .card h2{
+          width: 100% ;
+          font-size: 15px;
+     }
+     section.course .container .content .course-benefits .card p{
+          width: 100%;
+          text-align: center;
+          font-size: 10px;
+     }
+
+     section.why-us{
+          width: 100%;
+          height: 120vh;
+     }
+     section.why-us .container .title{
+          height: 13%;
+     }
+     section.why-us .container .title h2{
+          font-size: 30px;
+     }
+     section.why-us .container .title p{
+          font-size: 15px;
+     }
+     section.why-us .container .content{
+          width: 100%;
+          height: 87%;
+     }
+     section.why-us .container .content .row-2{
+          height: 100%;
+          border: 1px solid;
+     }
+     section.why-us .container .content .row-2 ul{
+          height: fit-content;
+     }
+     section.why-us .container .content .row-2 ul li span{
+          height: 40px;
+     }
+     section.why-us .container .content .row-2 ul li span img{
+          height: 100%;
+     }
+     section.why-us .container .content .row-2 ul li p{
+          font-size: 20px;
+     }
+     section.why-us .container .content .row-2 .box{
+          height: 70px;
+     }
+     section.why-us .container .content .row-3{
+          transform: translate(150px , -50px);
+     }
+     section.tutor{
+          width: 100%;
+          height: 100vh;
+          border: 1px solid;
+     }
+     section.tutor .content{
+          width: 50%;
+     }
+     section.tutor .content .teacher{
+          height: fit-content;
+     }
+     section.tutor .content .teacher div{
+          width: 50px;
+          height: 100px;
+     }
+     section.tutor .content .teacher .heading{
+          font-size: 25px;
+     }
+     section.tutor .content .teacher .teacher{
+          font-size: 30px;
+     }
+     section.tutor img{
+          width: 50%;
+          height: auto !important;
+     }
+     section.tutor .content .statistics{
+          width: 100%;
+          height: fit-content;
+     }
+     section.tutor .content .statistics li span{
+          height: 40px;
+          padding: 5px 0;
+     }
+     section.tutor .content .statistics li span img{
+          height: 100%;
+     }
+     section.tutor .content .statistics li p{
+          font-size: 18px;
+     }
+     section.tutor .content p{
+          height: fit-content;
+          font-size: 18.5px;
+     }
+     footer{
+          height: 100vh;
+     }
+}
