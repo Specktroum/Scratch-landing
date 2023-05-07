@@ -69,7 +69,7 @@ nav.navbar{
      display: flex;
      font-family: Pinar;
      margin-top: 20px;
-     height: 16vh;
+     height: 14vh;
 }
 nav.navbar ul{
      margin-right: 20%;
@@ -124,7 +124,7 @@ header.header .container .hero-content p{
      margin: 0 0 40px 0;
 }
 header.header .container .hero-content div{
-     width: 40%;
+     width: 43%
 }
 header.header .container .hero-content div button{
      padding: 10px 20px;
@@ -134,6 +134,14 @@ header.header .container .hero-content div button{
      color: #fff;
      font-family: Rokh-Ultrabold;
      border-radius: 7px;
+}
+.cta img{
+     margin-bottom: 2px;
+     margin-right: 2px;
+}
+header.header .container .hero-content div button img{
+     margin-left: 8px;
+     margin-bottom: 2px;
 }
 /* #endregion */
 
@@ -266,13 +274,13 @@ section.why-us .container .content .row-2 ul li p{
 }
 section.why-us .container .content .row-2 .box{
      font-family: Rokh-Semibold;
-     height: 90px;
+     height: 75px;
      font-size: x-large;
-     width: 400px;
-     border-radius: 30px;
+     width: 350px;
+     border-radius: 50px;
      color: #fff;
-     background-color: var(--Green);
-     transform: translate(50px, 5px);
+     background-color: #b3b3b3;
+     transform: translate(90px, 5px);
 
 }
 section.why-us .container .content .row-3{
@@ -284,27 +292,34 @@ section.why-us .container .content .row-3{
 /* Tutor */
 /* #region */
 section.tutor{
-     height: 100vh;
+     height: 80vh;
      margin-bottom: 30px;
 }
+section.tutor img.tutor-img{
+     width: 45%;
+}
 section.tutor .content{
-     width: 50%;
+     width: 45%;
 }
 section.tutor .content .teacher .heading{
      font-family: Rokh-Semibold;
      font-size: 40px;
-     margin-bottom: -40px;
 }
 section.tutor .content .teacher div{
-     width: 60px;
-     height: 130px;
+     width: 130px;
+     height: 60px;
+     padding: 10px;
      border-radius: 50px;
-     background: linear-gradient(180deg, #2FD686 0%, rgba(47, 214, 134, 0) 100%);
+     background: linear-gradient(270deg, #2FD686 0%, rgba(47, 214, 134, 0) 100%);
+}
+section.tutor .content .teacher div img{
+     height: 40px;
+     margin-left: 10px;
 }
 section.tutor .content .teacher .teacher{
      font-family: Rokh-Extrabold;
-     font-size: 40px;
-     margin-top: -40px;
+     font-size: 35px;
+     margin-top: 20px;
 }
 section.tutor .content .statistics li{
      margin: 5px;
@@ -329,7 +344,7 @@ section.tutor .nu-2 , section.tutor .nu-3{
 }
 section.tutor .content p{
      font-family: Pinar;
-     font-size: 25px;
+     font-size: 20px;
      text-align: justify;
      color: #444444;
 }
@@ -357,7 +372,7 @@ section.course-content .col2 img:first-child{
 /* footer */
 /* #region */
 footer{
-     height: 70vh;
+     height: 75vh;
      background: url(../assets/footerbackground.svg) no-repeat;
      background-size: cover;;
 }
@@ -423,6 +438,7 @@ footer .col-1 .socials img{
      nav.navbar{
           width: 100%;
           height: 15vh;
+          margin-bottom: 50px;
      }
      nav.navbar ul{
           margin: 0;
@@ -431,14 +447,16 @@ footer .col-1 .socials img{
 
      header.header{
           width: 100%;
-          height: 120vh;
+          height: fit-content;
+          margin-bottom: 50px;
      }
      header.header .container{
           flex-direction: column;
      }
      header.header .container .hero-content{
           width: 100%;
-          height: 50%;
+          height: fit-content;
+          margin-bottom: 20px;
      }
      header.header .container .hero-content h1{
           font-size: 53px;
@@ -447,36 +465,42 @@ footer .col-1 .socials img{
           font-size: 30px;
           text-align: center;
      }
+     header.header .container .hero-content div{
+          width: 55%;
+     }
      header.header .container .hero-img{
           width: 100%;
-          height: 50%;
+          height: fit-content;
           display: flex;
           justify-content: center;
           align-items: center;
      }
      header.header .container .hero-img img{
           width: 100%;
+          height: fit-content;
      }
      section.course{
           width: 100%;
-          height: 130vh;
+          height: fit-content;
+          margin-bottom: 50px;
      }
      section.course .container{
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           width: 100%;
-          height: 100%;
+          height: fit-content;
      }
      section.course .container .title{
           width: 100%;
-          height: 7%;
+          height: fit-content;
+          margin-bottom: 20px;
      }
      section.course .container .content{
           display: flex;
           flex-direction: column-reverse !important;
           width: 100%;
-          height: 90%;
+          height: fit-content;
      }
      section.course .container .content .course-benefits{
           width: 100%;
@@ -487,7 +511,7 @@ footer .col-1 .socials img{
      }
      section.course .container .content video{
           width: 100%;
-          height: auto;
+          height: fit-content;
           margin-bottom: 20px;
      }
      section.course .container .content .course-benefits .card{
@@ -496,11 +520,12 @@ footer .col-1 .socials img{
      }
      section.why-us{
           width: 100%;
-          height: 170vh;
+          height: fit-content;
+          margin-bottom: 50px;
      }
      section.why-us .container{
           width: 100%;
-          height: 100%;
+          height: fit-content;
           display: flex;
           flex-direction: column !important;
           justify-content: space-between;
@@ -508,18 +533,22 @@ footer .col-1 .socials img{
      }
      section.why-us .container .title{
           width: 100%;
-          height: 10%;
+          height: fit-content;
           text-align: center;
+          margin-bottom: 20px;
+     }
+     section.why-us .container .title h2{
+          margin-bottom: 10px;
      }
      section.why-us .container .content{
           width: 100%;
-          height: 90%;
+          height: fit-content;
           display: flex;
           flex-direction: column;
      }
      section.why-us .container .content .row-1{
           width: 100%;
-          height: auto;
+          height: fit-content;
      }
      section.why-us .container .content .row-2{
           width: 100%;
@@ -536,7 +565,7 @@ footer .col-1 .socials img{
      }
      section.why-us .container .content .row-2 .box{
           transform: translate(0);
-          height: 20%;
+          height: 40px;
      }
      section.why-us .container .content .row-3{
           width: 60%;
@@ -545,22 +574,19 @@ footer .col-1 .socials img{
      }
      section.tutor{
           width: 100%;
-          height: 150vh;
+          height: fit-content;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           align-items: center;
      }
 
-     section.tutor img{
-          height: 50% !important;
+     section.tutor img.tutor-img{
+          width: 100%;
      }
      section.tutor .content{
           width: 100%;
-          height: 50%;
-     }
-     section.tutor .content .statistics li span img{
-          height: 100% !important;
+          height: fit-content;
      }
      section.course-content{
           width: 100%;
@@ -571,6 +597,13 @@ footer .col-1 .socials img{
      section.course-content .col{
           width: 100%;
           height: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+     }
+     section.course-content .col2 img:nth-child(1){
+          margin: 0;
+          transform: translate(0);
      }
      footer{
           flex-direction: column;
@@ -637,43 +670,53 @@ footer .col-1 .socials img{
      }
      header.header{
           width: 100px;
-          height: 95vh;
+          height: fit-content;
+          margin-bottom: 50px;
      }
      header.header .container{
           width: 100%;
      }
      header.header .container .hero-img{
           width: 40%;
+          height: fit-content;
      }
      header.header .container .hero-img img{
-          height: 76% !important;
+          width: 100%;
      }
      header.header .container .hero-content{
           width: 60%;
-          height: 100%;
+          height: fit-content;
           text-align: center;
      }
      header.header .container .hero-content h1{
-          font-size: 45px;
+          font-size: 40px;
+     }
+     header.header .container .hero-content p{
+          font-size: 15px;
+     }
+     header.header .container .hero-content div{
+          width: 60%;
      }
 
      section.course{
           width: 100%;
-          height: 150vh;
+          height: fit-content;
+          margin-bottom: 50px;
      }
      section.course .container .title{
           width: 100%;
-          height: 10%;
+          height: fit-content;
+          margin-bottom: 50px;
      }
      section.course .container .content{
-          height: 90%;
+          height: fit-content;
      }
      section.course .container .content video{
           width: 45%;
      }
      section.course .container .content .course-benefits{
           width: 55%;
-          height: 100%;
+          height: fit-content;
      }
      section.course .container .content .course-benefits .card{
           padding: 15px 20px;
@@ -695,10 +738,12 @@ footer .col-1 .socials img{
 
      section.why-us{
           width: 100%;
-          height: 120vh;
+          height: fit-content;
+          margin-bottom: 50px;
      }
      section.why-us .container .title{
-          height: 13%;
+          height: fit-content;
+          margin-bottom: 50px;
      }
      section.why-us .container .title h2{
           font-size: 30px;
@@ -708,11 +753,10 @@ footer .col-1 .socials img{
      }
      section.why-us .container .content{
           width: 100%;
-          height: 87%;
+          height: fit-content;
      }
      section.why-us .container .content .row-2{
-          height: 100%;
-          border: 1px solid;
+          height: fit-content;
      }
      section.why-us .container .content .row-2 ul{
           height: fit-content;
@@ -730,12 +774,13 @@ footer .col-1 .socials img{
           height: 70px;
      }
      section.why-us .container .content .row-3{
-          transform: translate(150px , -50px);
+          height: 250px;
+          transform: translate(100px , -50px);
      }
      section.tutor{
           width: 100%;
-          height: 100vh;
-          border: 1px solid;
+          height: fit-content;
+          margin-bottom: 50px;
      }
      section.tutor .content{
           width: 50%;
@@ -744,8 +789,8 @@ footer .col-1 .socials img{
           height: fit-content;
      }
      section.tutor .content .teacher div{
-          width: 50px;
-          height: 100px;
+          width: 100px;
+          height: 50px;
      }
      section.tutor .content .teacher .heading{
           font-size: 25px;
@@ -755,7 +800,7 @@ footer .col-1 .socials img{
      }
      section.tutor img{
           width: 50%;
-          height: auto !important;
+          height: fit-content;
      }
      section.tutor .content .statistics{
           width: 100%;
@@ -777,5 +822,13 @@ footer .col-1 .socials img{
      }
      footer{
           height: 100vh;
+          font-size: 12px;
      }
+     footer .col-1 .row-1{
+          width: 30%;
+     }
+     footer .col-1 .row-1 p{
+          width: 100%;
+     }
+    
 }
