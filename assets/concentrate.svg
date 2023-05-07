@@ -1,8 +1,1 @@
-<svg width="121" height="121" viewBox="0 0 121 121" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="121" height="121" rx="35" fill="#F1F7FF"/>
-<path d="M69.5003 29.8332L60.292 35.9999L73.6253 55.9166L97.2087 40.1249C99.5837 38.5415 100.209 35.2915 98.6253 32.9582L91.042 21.6666C89.4586 19.2916 86.2086 18.6666 83.8753 20.2499" stroke="#2F73EE" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M61.7246 37.9968L41.8176 51.3296L52.4839 67.2552L72.3909 53.9224L61.7246 37.9968Z" stroke="#2F73EE" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M35.2918 77.2496L51.7502 66.2497L42.4168 52.333L25.9585 63.3329C24.0418 64.6246 23.5418 67.208 24.8335 69.1247L29.5418 76.1246C30.7918 77.9996 33.3752 78.4996 35.2918 77.2496Z" stroke="#2F73EE" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M61.2086 61.8329L42.5002 102.666" stroke="#2F73EE" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M61 61.8329L79.5 102.666" stroke="#2F73EE" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="121" height="121" fill="none" xmlns:v="https://vecta.io/nano"><rect width="121" height="121" rx="35" fill="#f1f7ff"/><g stroke="#2f73ee" stroke-width="5" stroke-linejoin="round"><path d="M69.5 29.833L60.292 36l13.333 19.917 23.583-15.792c2.375-1.583 3-4.833 1.417-7.167l-7.583-11.292c-1.583-2.375-4.833-3-7.167-1.417" stroke-linecap="round"/><path d="M61.725 37.997L41.818 51.33l10.666 15.926 19.907-13.333-10.666-15.926zM35.292 77.25l16.458-11-9.333-13.917-16.458 11c-1.917 1.292-2.417 3.875-1.125 5.792l4.708 7c1.25 1.875 3.833 2.375 5.75 1.125z"/><g stroke-linecap="round"><path d="M61.209 61.833L42.5 102.666"/><path d="M61 61.833l18.5 40.833"/></g></g></svg>
