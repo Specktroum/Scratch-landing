@@ -450,13 +450,17 @@ footer .col-1 .socials img{
      }
 
      nav.navbar{
+          flex-direction: column;
           width: 100%;
-          height: 15vh;
+          height: fit-content;
           margin-bottom: 50px;
      }
      nav.navbar ul{
           margin: 0;
-          width: 80%;
+          width: 100%;
+     }
+     nav.navbar img.logo{
+          height: 100px !important;
      }
 
      header.header{
