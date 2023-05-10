@@ -55,21 +55,28 @@ body{
      color: #404040;
 }
 .pop-up .row-2 .action-btn{
-     padding: 15px 0;
-     background-color: var(--Green);
-     border: none;
-     border-radius: 10px;
-     color: #fff;
+     border: 3px solid var(--Green);
      font-family: Rokh-Extrabold;
+     background-color: #fff;
+     border-radius: 10px;
+     padding: 15px 0;
+     color: #fff;
+     background-image: -webkit-linear-gradient(30deg, #2FD686 50%, transparent 50%);
+     background-image: linear-gradient(30deg, #2FD686 50%, transparent 50%);
+     background-size: 700px;
+     background-repeat: no-repeat;
+     background-position: 0%;
+     -webkit-transition: background 300ms ease-in-out;
+     transition: background 300ms ease-in-out;
+}
+.pop-up .row-2 .action-btn:hover{
+     background-position: 100%;
+     color: #000;
 }
 .inActive{
      transition: all 1s ease-in-out !important;
      top: -100% !important;
      left: 40% !important;
-}
-button:hover , a:hover{
-     transition: all .5s ease-in-out;
-     scale: 1.2;
 }
 /* navbar */
 /* #region */
@@ -86,15 +93,30 @@ nav.navbar ul{
      font-size: 18px;
      width: 42%;
 }
+nav.navbar ul li:hover img{
+     scale: 1.3;
+     transition: .2s ease-in-out;
+}
+
 .cta{
-     background-color: var(--Yellow);
+     background-color: #fff;
      font-family: Rokh-Ultrabold;
      text-decoration: none;
      padding: 10px 15px;
      border-radius: 7px;
-     outline: none;
      color: #fff;
-     border: none;
+     border: 3px solid var(--Yellow);
+     background-image: -webkit-linear-gradient(30deg, #ffb820 50%, transparent 50%);
+     background-image: linear-gradient(30deg, #ffb820 50%, transparent 50%);
+     background-size: 500px;
+     background-repeat: no-repeat;
+     background-position: 0%;
+     -webkit-transition: background 300ms ease-in-out;
+     transition: background 300ms ease-in-out;
+}
+.cta:hover{
+     background-position: 100%;
+     color: #000;
 }
 /* #endregion */
 
@@ -136,12 +158,23 @@ header.header .container .hero-content div{
 }
 header.header .container .hero-content div button{
      padding: 10px 20px;
-     border: none;
+     border: 3px solid var(--blue);
      outline: none;
-     background-color: var(--blue);
+     background-color: var(--Green);
      color: #fff;
      font-family: Rokh-Ultrabold;
      border-radius: 7px;
+     background-image: -webkit-linear-gradient(30deg, #2F73EE 50%, transparent 50%);
+     background-image: linear-gradient(30deg, #2F73EE 50%, transparent 50%);
+     background-size: 700px;
+     background-repeat: no-repeat;
+     background-position: 0%;
+     -webkit-transition: background 300ms ease-in-out;
+     transition: background 300ms ease-in-out;
+}
+header.header .container .hero-content div button:hover{
+     background-position: 100%;
+     border: 3px solid var(--Green);
 }
 .cta img{
      margin-bottom: 2px;
@@ -414,6 +447,14 @@ footer .col-1 .datas{
 }
 footer .col-1 .datas li img{
      transform: translate(2px ,9px);
+}
+footer .col-1 .datas li:hover img{
+     scale: 1.1;
+     transition: .2s ease-in-out;
+}
+footer .col-1 .datas li img:hover{
+     scale: 1.3;
+     transition: .2s ease-in-out;
 }
 .linkers a{
      margin: 0 10px;
