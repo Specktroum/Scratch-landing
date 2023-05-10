@@ -9,6 +9,7 @@
      <link rel="stylesheet" href="css/normalize.css">
      <link rel="stylesheet" href="css/main.css">
      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
 </head>
 
 <body dir="rtl">
@@ -16,20 +17,9 @@
      <div class="pop-up df jcc aic fdc inActive" id="popUpBox">
           <div class="row-1 w-100 df aic"><img id="closer" src="assets/add.svg" alt=""></div>
           <div class="row-2 pre-register-form w-100 df jcsb aic">
-               <input
-                    type="text"
-                    id="fullName" 
-                    class="input w-100" 
-                    placeholder="نام و نام خانوادگی">
-               <input 
-                    type="text" 
-                    id="number" 
-                    class="input" 
-                    placeholder="شماره تلفن">
-               <select 
-               name="age" 
-               class="input" 
-               id="age">
+               <input type="text" id="fullName" class="input w-100" placeholder="نام و نام خانوادگی">
+               <input type="text" id="number" class="input" placeholder="شماره تلفن">
+               <select name="age" class="input" id="age">
                     <option value="5">سن</option>
                     <option value="6">6</option>
                     <option value="7">7</option>
@@ -39,35 +29,54 @@
                     <option value="11">11</option>
                     <option value="12">12</option>
                </select>
-               <button
-                    onclick="sendMail()"
-                    class="action-btn w-100">
+               <button onclick="sendMail()" class="action-btn w-100">
                     پیش ثبت نام
                </button>
-          
+
+          </div>
+     </div>
+     <div class="pop-up pop-up2 df jcc aic fdc inActive" id="askUsBox">
+          <div class="row-1 w-100 df aic"><img id="askUsCloser" src="assets/add.svg" alt=""></div>
+          <div class="row-2 pre-register-form w-100 df jcsb aic">
+               <input type="text" id="fullName" class="input" placeholder="نام شما">
+               <input type="text" id="number" class="input" placeholder="شماره تلفن">
+               <textarea name="question" id="question" class="input w-100" cols="auto" rows="auto"
+                    placeholder="سوال خود را بپرسید"></textarea>
+               <button onclick="" class="action-btn w-100">
+                    ارسال
+               </button>
+
           </div>
      </div>
 
      <div class="body-container">
           <nav class="navbar container aic">
-               
+
                <img src="assets/Logo.png" class="h-100 logo" alt="">
 
                <ul class="df">
 
-                    <a href="#course"><li class="h-100 df aic"><img src="assets/book.svg" alt=""> معرفی دوره</li></a>
-                    <a href="#courseContent"><li class="h-100 df aic"><img src="assets/briefcase.svg" alt=""> محتوای دوره</li></a>
-                    <a href="#whyUs"><li class="h-100 df aic"><img src="assets/buildings.svg" alt=""> برگزار کننده</li></a>
-                    <a href="#footer"><li class="h-100 df aic"><img src="assets/note-2.svg" alt=""> ارتباط با ما</li></a>
-                    
+                    <a href="#course">
+                         <li class="h-100 df aic"><img src="assets/book.svg" alt=""> معرفی دوره</li>
+                    </a>
+                    <a href="#courseContent">
+                         <li class="h-100 df aic"><img src="assets/briefcase.svg" alt=""> محتوای دوره</li>
+                    </a>
+                    <a href="#whyUs">
+                         <li class="h-100 df aic"><img src="assets/buildings.svg" alt=""> برگزار کننده</li>
+                    </a>
+                    <a href="#footer">
+                         <li class="h-100 df aic"><img src="assets/note-2.svg" alt=""> ارتباط با ما</li>
+                    </a>
+
                </ul>
-               
+
           </nav>
 
           <header class="header w-100">
 
                <div class="container h-100 df jcsb aic">
-                    
+
                     <div class="hero-content h-100 df fdc aic jcc" data-aos="fade-up">
                          <h1>
                               <span>Scratch</span> یک تصمیم
@@ -76,8 +85,10 @@
                          </h1>
                          <p>آموزش و یادگیری زبان اسکرچ با استفاده از بهترین و به روز ترین متدهای تدریس</p>
                          <div class="df aic jcsb">
-                              <button class="pre-register effect df jcc aic" id="popUp"><img src="assets/message-add.svg" alt="">پیش ثبت نام</button>
-                              <a class="cta effect df jcc aic" href="#course">درباره دوره<img src="assets/arrow-left.svg" alt=""></a>
+                              <button class="pre-register effect df jcc aic" id="popUp"><img
+                                        src="assets/message-add.svg" alt="">پیش ثبت نام</button>
+                              <a class="cta effect df jcc aic" href="#course">درباره دوره<img
+                                        src="assets/arrow-left.svg" alt=""></a>
                          </div>
                     </div>
 
@@ -117,20 +128,21 @@
                               <div class="card card-3">
                                    <img src="assets/Improvement.svg" alt="">
                                    <h2 class="heading chang">پیشرفت در دروس مدرسه</h2>
-                                   <p class="discription">تحلیل مسائل انتزاعی و موقعیت های منطقی برای پیشرفت در دروس مدرسه</p>
+                                   <p class="discription">تحلیل مسائل انتزاعی و موقعیت های منطقی برای پیشرفت در دروس
+                                        مدرسه</p>
                               </div>
                               <div class="card card-4">
                                    <img src="assets/creative.svg" alt="">
                                    <h2 class="heading">افزایش خلاقیت در زندگی و حل مسئله</h2>
-                                   <p class="discription">افزایش نوآوری و بالا بردن جنبه حس خلاقانه کودک با تدریس به روش میکرولرنینگ</p>
+                                   <p class="discription">افزایش نوآوری و بالا بردن جنبه حس خلاقانه کودک با تدریس به روش
+                                        میکرولرنینگ</p>
                               </div>
 
                          </div>
 
-                         <video src="assets/yt5s.com-What is Scratch_-(1080p).mp4" data-aos="fade-down" controls poster="assets/"></video>
-
+                         <video src="assets/yt5s.com-What is Scratch_-(1080p).mp4" controls
+                              poster="assets/poster.jpg"></video>
                     </div>
-
 
                </div>
 
@@ -150,10 +162,19 @@
                          <img class="row-1" src="assets/why-us.png"></img>
                          <div class="row-2 df fdc aic">
                               <ul class="df fdc jcsb">
-                                        <li class="df aic"><span class="nu-1"><img src="assets/people.svg" alt=""></span><p>کادر بسیار مجرب</p></li>
-                                        <li class="df aic"><span class="nu-2"><img src="assets/crown.svg" alt=""></span><p>خلاقیت و نوآوری</p></li>
-                                        <li class="df aic"><span class="nu-3"><img src="assets/note-favorite.svg" alt=""></span><p>تعهد در پیشرفت</p></li>
-                                        <li class="df aic"><span class="nu-4"><img src="assets/building-4.svg" alt=""></span><p>محیط گرم و صمیمی</p></li>
+                                   <li class="df aic"><span class="nu-1"><img src="assets/people.svg" alt=""></span>
+                                        <p>کادر بسیار مجرب</p>
+                                   </li>
+                                   <li class="df aic"><span class="nu-2"><img src="assets/crown.svg" alt=""></span>
+                                        <p>خلاقیت و نوآوری</p>
+                                   </li>
+                                   <li class="df aic"><span class="nu-3"><img src="assets/note-favorite.svg"
+                                                  alt=""></span>
+                                        <p>تعهد در پیشرفت</p>
+                                   </li>
+                                   <li class="df aic"><span class="nu-4"><img src="assets/building-4.svg" alt=""></span>
+                                        <p>محیط گرم و صمیمی</p>
+                                   </li>
                               </ul>
                               <div class="box df jcc aic">معماری آینده کودک شما از مبنا</div>
                          </div>
@@ -165,69 +186,95 @@
           </section>
 
           <section id="tutor" class="tutor container df jcsb aic w-100">
-               
+
                <div class="content h-100 df fdc jcsb aic" data-aos="fade-up">
                     <div class="teacher">
-                         <div class="df aic"><img src="assets/user-octagon.svg" alt=""><p class="heading">مدرس:</p></div>
+                         <div class="df aic"><img src="assets/user-octagon.svg" alt="">
+                              <p class="heading">مدرس:</p>
+                         </div>
                          <p class="teacher">سید امیرمهدی حسینی</p>
                     </div>
                     <ul class="statistics w-100 df jcsb">
                          <div class="col1 h-100 df fdc jcc aic">
-                              <li class="df aic"><span class="nu-1"><img src="assets/message-programming.svg" alt=""></span><p>طراح و برنامه نویس وب</p></li>
-                              <li class="df aic"><span class="nu-3"><img src="assets/pen-tool-2.svg" alt=""></span><p>طراح رابط و تجربه کاربری</p></li>
+                              <li class="df aic"><span class="nu-1"><img src="assets/message-programming.svg"
+                                             alt=""></span>
+                                   <p>طراح و برنامه نویس وب</p>
+                              </li>
+                              <li class="df aic"><span class="nu-3"><img src="assets/pen-tool-2.svg" alt=""></span>
+                                   <p>طراح رابط و تجربه کاربری</p>
+                              </li>
                          </div>
                          <div class="col2 h-100 df fdc jcc aic">
-                              <li class="df aic"><span class="nu-2"><img src="assets/document-code-2.svg" alt=""></span><p>توسعه دهنده MEAN</p></li>
-                              <li class="df aic"><span class="nu-4"><img src="assets/hashtag.svg" alt=""></span><p>توسعه دهنده Csharp</p></li>
+                              <li class="df aic"><span class="nu-2"><img src="assets/document-code-2.svg" alt=""></span>
+                                   <p>توسعه دهنده MEAN</p>
+                              </li>
+                              <li class="df aic"><span class="nu-4"><img src="assets/hashtag.svg" alt=""></span>
+                                   <p>توسعه دهنده Csharp</p>
+                              </li>
                          </div>
                     </ul>
-                    <p class="w-100">سلام من امیرمهدی هستم، مدرس این دوره هدفمند و قراره توی این دوره بهتون یاد بدم که چطور مثل یه
-                         برنامه نویس فکر کنین و چطور به روش آسونی کد زدن رو بطور غیر مستقیم تجربه کنین. تو این دوره قصد
-                         دارم شما رو برای تبدیل شدن به یک برنامه نویس آماده کنم، نه یک کد نویس!</p>
+                    <p class="w-100">سلام، من امیرمهدی هستم. مدرس این دوره هدفمند؛ در این دوره یاد خواهید گرفت که مثل یک
+                         برنامه نویس فکر کنید و کد نویسی را بصورت غیر مستقیم تجربه کنید. من در این دوره جذاب و مهیج کودک
+                         شما را برای برنامه نویسی در آینده آماده خواهم کرد!</p>
+                    <button class="ask-us" id="askUs">سوالی دارید؟ بپرسید!</button>
                </div>
-                    
-                    <img class="tutor-img" src="assets/Group 727.png" data-aos="fade-down" alt="">
+
+               <img class="tutor-img" src="assets/Group 727.png" data-aos="fade-down" alt="">
 
           </section>
 
           <section id="courseContent" class="course-content container w-100 df jcsb aic">
                <div class="col col1" data-aos="fade-up"><img src="assets/Cource.svg" alt=""></div>
-               <div class="col col2"><img src="assets/gonna get change.png" data-aos="fade-down" alt=""><img src="assets/Support.svg" data-aos="fade-down" alt=""></div>
+               <div class="col col2"><img src="assets/gonna get change.png" data-aos="fade-down" alt=""><img
+                         src="assets/Support.svg" data-aos="fade-down" alt=""></div>
           </section>
 
           <footer id="footer" class="footer df fdc jcsb container w-100" data-aos="fade-up">
                <div class="col-1 w-100 df jcsb">
                     <div class="row-1 df fdc jcsb">
                          <img src="assets/footrer-lofgo.png" alt="">
-                    <p>وقتی ثروت‌ های بزرگ به دست برخی مردم می‌افتد در پرتو آن نیرومند می‌شوند و در سایهٔ نیرومندی و ثروت خیال می‌ کنند که می‌توانند در خارج از</p>
+                         <p>آی تی مبنا؛ شرکتی چند جانبه، پروژه محور و آموزش محور، معمار آینده برنامه نویسی فرزند شما می
+                              باشد. بی شک تعهدی تضمین شده در کارنامه عملکردی دانشجویان بعنوان اعتبار شرکت ثبت خواهد
+                              گردید.</p>
                     </div>
                     <ul class="datas df fdc">
                          <li><b>اطلاعات آموزشگاه</b></li>
-                         <a target="_blank" href="https://goo.gl/maps/5qWSWNuyZBNeqY7K8"><li><img src="assets/location.svg" alt="">شهرک وایین، ابتدای بلوار امام خمینی، کوچه یاسین یکم</li></a>
-                         <a target="_blank" href="https://goo.gl/maps/5qWSWNuyZBNeqY7K8"><li><img src="assets/buliding.svg" alt="">مجتمع آریا، طبقه ۳، واحد ۸</li></a>
-                         <li class="linkers"><img src="assets/note-2.svg" alt=""><a href="tel:02165257800"> 7800 6525 021 </a> | <a href="tel:02165328867"> 8867 6532 021 </a> | <a href="tel:09356787098"> 7098 678 0935 </a></li>
+                         <a target="_blank" href="https://goo.gl/maps/5qWSWNuyZBNeqY7K8">
+                              <li><img src="assets/location.svg" alt="">شهرک وایین، ابتدای بلوار امام خمینی، کوچه یاسین
+                                   یکم</li>
+                         </a>
+                         <a target="_blank" href="https://goo.gl/maps/5qWSWNuyZBNeqY7K8">
+                              <li><img src="assets/buliding.svg" alt="">مجتمع آریا، طبقه ۳، واحد ۸</li>
+                         </a>
+                         <li class="linkers"><img src="assets/note-2.svg" alt=""><a href="tel:02165257800"> 7800 6525
+                                   021 </a> | <a href="tel:02165328867"> 8867 6532 021 </a> | <a href="tel:09356787098">
+                                   7098 678 0935 </a></li>
                     </ul>
                     <ul class="socials df jcsb aic fdc">
                          <li><b>فضای مجازی</b></li>
                          <div class="df jcsb aic w-100">
-                              <li><a target="_blank" href="https://ble.ir/itmabna01"><img src="assets/bale.svg" alt=""></a></li>
-                              <li><a target="_blank" href="https://telegram.me/itmabna01"><img src="assets/telegram.svg" alt=""></a></li>
-                              <li><a target="_blank" href="https://instagram.com/itmabna?igshid=NTc4MTIwNjQ2YQ=="><img src="assets/instagram.svg" alt=""></a></li>
-                              <li><a target="_blank" href="https://wa.me/+989356787098"><img src="assets/whatsapp.png" alt=""></a></li>
+                              <li><a target="_blank" href="https://ble.ir/itmabna01"><img src="assets/bale.svg"
+                                             alt=""></a></li>
+                              <li><a target="_blank" href="https://telegram.me/itmabna01"><img src="assets/telegram.svg"
+                                             alt=""></a></li>
+                              <li><a target="_blank" href="https://instagram.com/itmabna?igshid=NTc4MTIwNjQ2YQ=="><img
+                                             src="assets/instagram.svg" alt=""></a></li>
+                              <li><a target="_blank" href="https://wa.me/+989356787098"><img src="assets/whatsapp.png"
+                                             alt=""></a></li>
                          </div>
                     </ul>
                </div>
-               <div class="copyright df jcc col-2 w-100">ITMabna | 2023-1402 All right reserved <img src="assets/copyright.svg" alt=""></div>
+               <div class="copyright df jcc col-2 w-100">ITMabna | 2023-1402 All right reserved <img
+                         src="assets/copyright.svg" alt=""></div>
           </footer>
 
      </div>
-     <script type="text/javascript"
-     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
      </script>
      <script type="text/javascript">
-     (function(){
-     emailjs.init("2P1_tKNL0_FtsivmY");
-     })();
+          (function () {
+               emailjs.init("2P1_tKNL0_FtsivmY");
+          })();
      </script>
      <script src="app.js"></script>
      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

@@ -12,14 +12,19 @@ function sendMail(){
         alert("خیلی ممنون. بزودی با شما تماس میگیریم. به امید دیدار!")
       }, function(error) {
         console.log('FAILED...', error);
-        alert("متاسفانه مشکلی رخ داده. بزودی مشکل رو حل میکنیم")
+        alert("متاسفانه مشکلی رخ داد. چند ثانیه دیگر دوباره امتحان کنید")
       });
 }
 
 
+
+
 let preRegisterPopUp = document.getElementById("popUp");
 let popUpCloser = document.getElementById("closer");
+let askUsCloser = document.getElementById("askUsCloser");
 let popUpBox = document.getElementById("popUpBox");
+let askUs = document.getElementById("askUs");
+let askUsBox = document.getElementById("askUsBox");
 
 preRegisterPopUp.addEventListener("click", e =>{
   
@@ -28,18 +33,37 @@ preRegisterPopUp.addEventListener("click", e =>{
 
   e.preventDefault();
 });
-
 popUpCloser.addEventListener("click", e =>{
   
   popUpBox.classList.add("inActive");
 
   e.preventDefault();
 });
-
 if(popUpBox.classList.contains("aactive")){
   document.body.addEventListener("click", e=>{
     
     popUpBox.classList.remove("inActive")
+    
+    e.preventDefault()
+  })
+}
+askUs.addEventListener("click", e =>{
+  
+  askUsBox.classList.toggle("inActive");
+  askUsBox.classList.add("aactive");
+
+  e.preventDefault();
+});
+askUsCloser.addEventListener("click", e =>{
+  
+  askUsBox.classList.add("inActive");
+
+  e.preventDefault();
+});
+if(askUsBox.classList.contains("aactive")){
+  document.body.addEventListener("click", e=>{
+    
+    askUsBox.classList.remove("inActive")
     
     e.preventDefault()
   })

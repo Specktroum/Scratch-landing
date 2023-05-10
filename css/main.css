@@ -7,7 +7,8 @@ body{
 .body-container{
      width: 100% !important;
 }
-
+/* pop-up */
+/* #region */
 .pop-up{
      background-image: url(../assets/Mask\ group.png);
      background-position: 0 0;
@@ -66,18 +67,26 @@ body{
      background-size: 700px;
      background-repeat: no-repeat;
      background-position: 0%;
-     -webkit-transition: background 300ms ease-in-out;
-     transition: background 300ms ease-in-out;
+     -webkit-transition: background 500ms ease-in-out;
+     transition: background 500ms ease-in-out;
 }
 .pop-up .row-2 .action-btn:hover{
      background-position: 100%;
      color: #000;
+}
+.pop-up2 .row-2 .input:nth-child(1){
+     width: 46%;
+}
+.pop-up2 .row-2 .input:nth-child(2){
+     width: 46%;
 }
 .inActive{
      transition: all 1s ease-in-out !important;
      top: -100% !important;
      left: 40% !important;
 }
+/* #endregion */
+
 /* navbar */
 /* #region */
 nav.navbar{
@@ -111,8 +120,8 @@ nav.navbar ul li:hover img{
      background-size: 500px;
      background-repeat: no-repeat;
      background-position: 0%;
-     -webkit-transition: background 300ms ease-in-out;
-     transition: background 300ms ease-in-out;
+     -webkit-transition: background 500ms ease-in-out;
+     transition: background 500ms ease-in-out;
 }
 .cta:hover{
      background-position: 100%;
@@ -169,8 +178,8 @@ header.header .container .hero-content div button{
      background-size: 700px;
      background-repeat: no-repeat;
      background-position: 0%;
-     -webkit-transition: background 300ms ease-in-out;
-     transition: background 300ms ease-in-out;
+     -webkit-transition: background 500ms ease-in-out;
+     transition: background 500ms ease-in-out;
 }
 header.header .container .hero-content div button:hover{
      background-position: 100%;
@@ -248,6 +257,7 @@ section.course .container .content .course-benefits .card p{
 }
 section.course .container .content video{
      width: 50%;
+     height: fit-content;
      border-radius: 20px;
      box-shadow: 10px 20px 50px 0px #00000026;
 }
@@ -333,7 +343,7 @@ section.why-us .container .content .row-3{
 /* Tutor */
 /* #region */
 section.tutor{
-     height: 80vh;
+     height: fit-content;
      margin-bottom: 30px;
 }
 section.tutor img.tutor-img{
@@ -362,6 +372,9 @@ section.tutor .content .teacher .teacher{
      font-size: 35px;
      margin-top: 20px;
 }
+section.tutor .content .statistics{
+     margin: 20px 0;
+}
 section.tutor .content .statistics li{
      margin: 5px;
 }
@@ -388,6 +401,27 @@ section.tutor .content p{
      font-size: 20px;
      text-align: justify;
      color: #444444;
+}
+section.tutor .content .ask-us{
+     background-color: #fff;
+     font-family: Rokh-Ultrabold;
+     text-decoration: none;
+     padding: 10px 15px;
+     border-radius: 7px;
+     margin-top: 20px;
+     color: #fff;
+     border: 3px solid var(--blue);
+     background-image: -webkit-linear-gradient(30deg, #2F73EE 50%, transparent 50%);
+     background-image: linear-gradient(30deg, #2F73EE 50%, transparent 50%);
+     background-size: 500px;
+     background-repeat: no-repeat;
+     background-position: 0%;
+     -webkit-transition: background 500ms ease-in-out;
+     transition: background 500ms ease-in-out;
+}
+section.tutor .content .ask-us:hover{
+     background-position: 100%;
+     color: #000;
 }
 /* #endregion */
 
@@ -428,7 +462,7 @@ footer .col-2{
      align-items: center;
 }
 footer .col-1 .row-1{
-     height: 65%;
+     height: 70%;
      width: fit-content;
      justify-content: flex-start;
 }
@@ -436,8 +470,9 @@ footer .col-1 .row-1 img{
      width: 140px;
 }
 footer .col-1 .row-1 p{
+     margin-top: 20px;
      font-family: Pinar;
-     width: 300px;
+     width: 320px;
      text-align: justify;
 }
 footer .col-1 .datas{
@@ -467,6 +502,10 @@ footer .col-1 .socials{
 footer .col-1 .socials img{
      width: 40px;
      margin: 5px;
+}
+footer .col-1 .socials img:hover{
+     scale: 1.1;
+     transition: .2s ease-in-out;
 }
 /* #endregion */
 
