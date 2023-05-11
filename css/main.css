@@ -470,7 +470,7 @@ section.course-content .col2 img:first-child{
 /* #region */
 footer{
      height: 75vh;
-     background: url(../assets/footerbackground.svg) no-repeat;
+     background: url(../assets/footerbackground.png) no-repeat;
      background-size: cover;;
 }
 footer .col-1{
