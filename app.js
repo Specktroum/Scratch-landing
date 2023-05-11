@@ -82,3 +82,17 @@ emailjs.send('service_ueakwmi', 'template_nbfpxri', templateParams)
     });
 }
 
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("navactive");
+  navMenu.classList.toggle("navactive");
+});
+
+document.querySelectorAll(".nav-link").forEach((link) =>
+  link.addEventListener("click", () => {
+    hamburger.classList.remove("navactive");
+    navMenu.classList.remove("navactive");
+  })
+);

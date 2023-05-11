@@ -44,10 +44,10 @@ body{
      font-family: Rokh-Semibold;
 }
 .pop-up .row-2 .input:nth-child(2){
-     width: 40%;
+     width: 55%;
 }
 .pop-up .row-2 .input:nth-child(3){
-     width: 45%;
+     width: 35%;
 }
 .pop-up .row-2 select{
      color: #404040;
@@ -85,31 +85,6 @@ body{
      top: -100% !important;
      left: 40% !important;
 }
-/* #endregion */
-
-/* navbar */
-/* #region */
-nav.navbar{
-     justify-content: flex-start;
-     display: flex;
-     font-family: Pinar;
-     margin-top: 20px;
-     height: 12vh;
-}
-nav.mobile-navbar{
-     display: none;
-}
-nav.navbar ul{
-     margin-right: 20%;
-     justify-content: space-between;
-     font-size: 18px;
-     width: 42%;
-}
-nav.navbar ul li:hover img{
-     scale: 1.3;
-     transition: .2s ease-in-out;
-}
-
 .cta{
      background-color: #fff;
      font-family: Rokh-Ultrabold;
@@ -129,6 +104,50 @@ nav.navbar ul li:hover img{
 .cta:hover{
      background-position: 100%;
      color: #000;
+}
+/* #endregion */
+
+/* navbar */
+/* #region */
+nav {
+  height: 85px;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 20px #00000020;
+}
+nav img{
+     height: 85%;
+}
+.navbar {
+     width: 60%;
+     transition: all 0.5s;
+}
+.nav-menu {
+     width: 70%;
+     font-family: pinar;
+     -ms-flex-pack: distribute;
+}
+a.nav-link {
+  color: #000;
+  transition: 0.2s;
+}
+a.nav-link:hover {
+  color: var(--Yellow);
+}
+.hamburger {
+  display: none;
+}
+.bar,.fa-times {
+  width: 2rem;
+  height: 4px;
+  display: block;
+  color: #000;
+  padding: 0;
+  margin: 7px;
+  transition: 0.5s;
+  background-color: #000;
 }
 /* #endregion */
 
@@ -516,143 +535,69 @@ footer .col-1 .socials img:hover{
 
      .container{width: 100%; padding: 0 25px !important;}
      html, body{
-          direction: rtl;
           min-width: 600px !important;
           overflow-x: hidden;
      }
      .body-container{
-          padding-top: 10px;
           width: 100% !important;
      }
 
-     .pop-up{
+     .pop-up{  
           width: 65%;
           height: 30%;
           left: 100%;
           top: 25%;
           transform: translateX(-75%);
      }
-
-     nav.navbar{
-          display: none;
-     }
-     nav.mobile-navbar{
-          height: 10vh;
-          z-index: 1000;
+     /* mobile-navbar
+     /* #region */
+     .hamburger {
+          margin-left: 25px;
           display: block;
-          margin-bottom: 30px;
-     }
-     .mobilenav {
-          box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
-     }
-
-     .nav-container {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     height: 100%;
-     }
-
-     .mobilenav .nav-container a:hover{
-     font-weight: bolder;
-     }
-
-     .nav-container {
-     display: block;
-     position: relative;
-     height: 60px;
-     }
-
-     .nav-container .checkbox {
-     position: absolute;
-     display: block;
-     height: 32px;
-     width: 32px;
-     top: 20px;
-     left: 20px;
-     z-index: 5;
-     opacity: 0;
-     cursor: pointer;
-     }
-
-     .nav-container .hamburger-lines {
-     display: block;
-     height: 36px;
-     width: 42px;
-     position: absolute;
-     top: 17px;
-     left: 20px;
-     z-index: 2;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
-     }
-
-     .nav-container .hamburger-lines .line {
-     display: block;
-     height: 4px;
-     width: 100%;
-     border-radius: 10px;
-     background: #0e2431;
-     }
-
-     .nav-container .hamburger-lines .line1 {
-     transform-origin: 0% 0%;
-     transition: transform 0.4s ease-in-out;
-     }
-
-     .nav-container .hamburger-lines .line2 {
-     transition: transform 0.2s ease-in-out;
-     }
-
-     .nav-container .hamburger-lines .line3 {
-     transform-origin: 0% 100%;
-     transition: transform 0.4s ease-in-out;
-     }
-
-     .mobilenav .menu-items {
-          justify-content: space-evenly;
-          position: absolute;
-          margin-top: 10vh;
-          z-index: 100;
-          font-family: pinar;
-          padding-top: 120px;
-          background-color: #fff;
-          box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-          height: 120vh;
-          transform: translate(-150%);
-          padding-left: 50px;
-          transition: transform 0.5s ease-in-out;
-     }
-     .mobilenav .menu-items li {
-     font-size: 1.5rem;
-     }
-     .mobilenav .menu-items li a{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: larger
-     }
-     .mobilenav .menu-items li a img{
-          height: 40px;
-     }
-     .logo {
-          height: 95%;
-          position: absolute;
-          right: 15px;
-     }
-     .nav-container input[type="checkbox"]:checked ~ .menu-items {
-          transform: translateX(0);
-     }
-     .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
-          transform: rotate(45deg);
-     }
-     .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
-          transform: scaleY(0);
-     }
-     .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
-     transform: rotate(-45deg);
-     }
+        }
+        .navactive .bar:nth-child(2) {
+          opacity: 0;
+        }
+        .navactive .bar:nth-child(1) {
+          transform: translateY(10px) rotate(-315deg);
+          width: 100%;
+        }
+        .navactive .bar:nth-child(3) {
+          transform: translateY(-10px) rotate(-45deg);
+          width: 100%;
+        }
+        .nav-menu {
+          width: 50%;
+          justify-content: center !important;
+          height: 100%;
+          flex-direction: column;
+          position: fixed;
+          background: rgba(255, 255, 255, 0.46);
+          border-radius: 16px;
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
+          border: 1px solid rgba(255, 255, 255, 1);
+          top: 75px;
+          right: -100%;
+          transition: 0.5s;
+          margin: 0 auto;
+        }
+      
+        .nav-menu li {
+          font-size: x-large;
+          padding: 2rem 0;
+        }
+        a.nav-link {
+          margin: 1rem 0;
+          z-index: 1;
+        }
+        .navactive {
+          right: 16%;
+          z-index: 10000;
+          transition: 0.2s ease;
+        }
+     /* #endregion */
 
      header.header{
           width: 100%;
