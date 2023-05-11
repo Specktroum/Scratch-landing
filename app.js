@@ -1,24 +1,3 @@
-
-function sendMail(){
-    let templateParams = {
-      fullname: document.getElementById("fullName").value,
-      number: document.getElementById("number").value,
-      age: document.getElementById("age").value
-    };
-  
-  emailjs.send('service_ueakwmi', 'template_yn8qca7', templateParams)
-      .then(function(response) {
-        console.log('SUCCESS!', response.status, response.text);
-        alert("خیلی ممنون. بزودی با شما تماس میگیریم. به امید دیدار!")
-      }, function(error) {
-        console.log('FAILED...', error);
-        alert("متاسفانه مشکلی رخ داد. چند ثانیه دیگر دوباره امتحان کنید")
-      });
-}
-
-
-
-
 let preRegisterPopUp = document.getElementById("popUp");
 let popUpCloser = document.getElementById("closer");
 let askUsCloser = document.getElementById("askUsCloser");
@@ -68,3 +47,38 @@ if(askUsBox.classList.contains("aactive")){
     e.preventDefault()
   })
 }
+
+function sendMail(){
+    let templateParams = {
+      fullname: document.getElementById("fullName").value,
+      number: document.getElementById("number").value,
+      age: document.getElementById("age").value
+    };
+  
+  emailjs.send('service_ueakwmi', 'template_yn8qca7', templateParams)
+      .then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+        alert("خیلی ممنون. بزودی با شما تماس میگیریم. به امید دیدار!")
+      }, function(error) {
+        console.log('FAILED...', error);
+        alert("متاسفانه مشکلی رخ داد. چند ثانیه دیگر دوباره امتحان کنید")
+      });
+}
+
+function sendQues(){
+  let templateParams = {
+    fullname: document.getElementById("fullNameQues").value,
+    number: document.getElementById("numberQues").value,
+    question: document.getElementById("question").value
+  };
+
+emailjs.send('service_ueakwmi', 'template_nbfpxri', templateParams)
+    .then(function(response) {
+      console.log('SUCCESS!', response.status, response.text);
+      alert("بزودی با شما در جهت پاسخ به سوالتان تماس گرفته خواهد شد.")
+    }, function(error) {
+      console.log('FAILED...', error);
+      alert("متاسفانه مشکلی رخ داد. چند ثانیه دیگر دوباره امتحان کنید")
+    });
+}
+
